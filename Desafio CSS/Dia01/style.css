@@ -1,0 +1,47 @@
+@charset "UTF-8";
+
+@keyframes loading { /* inserir animacao */
+   0% {transform: rotate(0)}
+   100% {transform: rotate(360deg)}
+}
+
+body {
+    margin: 0px; /* margem */
+    padding: 0px; /* margem interna */
+}
+
+.container {
+    width: 1000px; /* largura */
+    height: 1000px; /* altura */
+    background-color: #000; /* cor de fundo */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.spinner-text {
+    color:aquamarine; /* cor do texto */
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 10pt; /* tamanho da fonte */
+    font-weight: 800; /* peso da fonte */
+    text-transform: uppercase; /* letras maiúsculas */
+    text-align: center; /* alinhamento do texto */
+    position: absolute;
+    letter-spacing: 3px;
+}
+
+.spinner {
+    border-radius: 100%;
+    border: 10px double #888;
+    border-left-color:aquamarine;
+    height: 180px;
+    width: 180px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    animation-name: loading; /* nome da animacao */
+    animation-duration: 2s; /* duracao da animacao */
+    animation-timing-function: linear; 
+    animation-iteration-count: infinite;
+}

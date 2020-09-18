@@ -13,3 +13,6 @@ O desafio 30 dias de CSS é um desafio que busca a melhoria das habilidades de c
 
 ## Desafio: Dia 02 - Animação no efeito de hover
 ![](hoverme.gif)
+
+## Desafio: Dia 03 - Transição plano de fundo
+![](transition.gif)

@@ -1,0 +1,76 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200&display=swap');
+
+@keyframes backgroundTransition { /* animacao transicao de animacao */
+    0% {
+        background-position: 0% 70%;
+    }
+    50% {
+        background-position: 70% 100%;
+    }
+    100% {
+        background-position: 0% 80%;
+    }
+}
+
+body {
+    margin: 0px;
+    padding: 0px;
+    color: #fff;
+}
+
+.d1 {
+    width: 100vw; /* largura (100% da largura da janela)*/
+    height: 100vh; /* altura (100% da altura da janela */
+    background: linear-gradient(-45deg, #62223e, #3b1c2a, #c96992, #cea6b7); /* gradiente de cores para gradiente */
+    background-size: 400% 400%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    animation-name: backgroundTransition; /* nome da animacao */
+    animation-duration: 10s; /* duracao da animacao */
+    animation-iteration-count: infinite; /* quantas vezes a animacao ira se repetir */
+    animation-timing-function: ease-in-out; /* configura a curva de velocidade da animacao */
+}
+
+h1 {
+    margin: 50px; /* margem */
+    padding: 12px 12px; /* margem interna */
+    border: 1px solid #fff; /* configuracao bordas */
+    border-radius: 10px; /* arredondamento da borda */
+    font-size: 16px; /* tamanho da fonte */
+    font-family: 'Montserrat', sans-serif; /* nome da fonte */
+    font-weight: bold; /* peso da fonte */
+    letter-spacing: 8px; /* espacamento entre as letras */
+    text-transform: uppercase; /* letras maiusculas */
+
+}
+
+.social-media {
+    margin-top: 1px;
+    display: flex;
+}
+
+a {
+    margin:5px;
+    font-family: 'Montserrat', sans-serif; 
+    font-size: 16px;
+    text-decoration: none;
+    color: #fff;
+    border: 1px solid #fff;
+    border-radius: 10px;
+    padding: 10px 10px;
+    min-width: 4px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: ease-in-out;
+
+}
+
+a:hover {
+    color: #000;
+    background-color: #fff;
+}

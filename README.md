@@ -18,4 +18,4 @@ O desafio 30 dias de CSS é um desafio que busca a melhoria das habilidades de c
 ![](transition.gif)
 
 ## Desafio: Dia 04 - Efeito pulse
-![](pulsea.gif)
+![](pulse.gif)

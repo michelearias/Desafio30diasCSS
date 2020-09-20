@@ -19,3 +19,6 @@ O desafio 30 dias de CSS é um desafio que busca a melhoria das habilidades de c
 
 ## Desafio: Dia 04 - Efeito pulse
 ![](pulse.gif)
+
+## Desafio: Dia 05 - Efeito hover em ícones das redes sociais
+![](social-media.gif)

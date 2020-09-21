@@ -1,0 +1,111 @@
+@charset "UTF-8";
+
+ul#album-fotos {
+    width: 700px;
+    margin: 0 auto;
+    padding: 100px;
+    overflow: hidden;
+    list-style: none; /*lista sem demarcador*/
+}
+
+ul#album-fotos li {
+    
+    float: left; /* um do lado do outro */
+    width: 200px; /* largura */
+    height: 200px; /* largura */
+    margin: 10px; /* margem fora */
+    border: 5px solid white; /* borda */
+    background-color: #ffffff; /* plano de fundo quadro */
+    box-shadow: 1px 1px 3px rgba(0,0,0,.4);  /* sombra */
+    -webkit-transition: all .4s ease-in; /* monitorar todos os efeitos, tempo da transicao, forma do efeito (ampliacao de maneira suave) */
+}
+
+ul#album-fotos li:hover {
+    -webkit-transform: scale(1.5); /*quando passa o mouse amplia a foto */
+}
+
+ul#album-fotos li span {
+    opacity: 0; /* nao aparecer legenda na imagem */
+    color: #ffffff;
+    text-shadow: 1px 1px 1px #000000;
+    background-color: rgba(0,0,0,.3);
+    font-size: 9pt;
+    line-height: 370px;
+    padding: 5px;
+}
+
+ul#album-fotos li:hover span { /* legenda aparecer quando o mouse passar por cima */
+    opacity: 1;
+}
+
+ul#album-fotos li#foto01 {
+    background: url('foto01.jpg') no-repeat;
+    background-position: 50% 50%; /* mudar o posicionamento da imagem */
+    background-size: 400px 400px; /* tamanho original da imagem colocada */
+    background-color: #ffffff; /* cor do plano de fundo da imagem */
+}
+
+ul#album-fotos li#foto01:hover { /* passar o mouse sobre a imagem reduzir a tela quando passar o mouse*/
+    background-position: 0px 0px; /* voltar a mostrar a parte de cima da tela */
+    background-size: 200px 200px; 
+}
+
+ul#album-fotos li#foto02 {
+    background: url('foto02.jpg') no-repeat;
+    background-position: 50% 50%; /* mudar o posicionamento da imagem */
+    background-size: 400px 400px; /* tamanho original da imagem colocada */
+    background-color: #ffffff; /* cor do plano de fundo da imagem */
+}
+
+ul#album-fotos li#foto02:hover { /* passar o mouse sobre a imagem reduzir a tela quando passar o mouse*/
+    background-position: 0px 0px; /* voltar a mostrar a parte de cima da tela */
+    background-size: 200px 200px; 
+}
+
+ul#album-fotos li#foto03 {
+    background: url('foto03.jpg') no-repeat;
+    background-position: 50% 50%; /* mudar o posicionamento da imagem */
+    background-size: 400px 400px; /* tamanho original da imagem colocada */
+    background-color: #ffffff; /* cor do plano de fundo da imagem */
+}
+
+ul#album-fotos li#foto03:hover { /* passar o mouse sobre a imagem reduzir a tela quando passar o mouse*/
+    background-position: 0px 0px; /* voltar a mostrar a parte de cima da tela */
+    background-size: 200px 200px; 
+}
+
+ul#album-fotos li#foto04 {
+    background: url('foto04.jpg') no-repeat;
+    background-position: 50% 50%; /* mudar o posicionamento da imagem */
+    background-size: 400px 400px; /* tamanho original da imagem colocada */
+    background-color: #ffffff; /* cor do plano de fundo da imagem */
+}
+
+ul#album-fotos li#foto04:hover { /* passar o mouse sobre a imagem reduzir a tela quando passar o mouse*/
+    background-position: 0px 0px; /* voltar a mostrar a parte de cima da tela */
+    background-size: 200px 200px; 
+}
+
+ul#album-fotos li#foto05 {
+    background: url('foto05.jpg') no-repeat;
+    background-position: 50% 50%; /* mudar o posicionamento da imagem */
+    background-size: 400px 400px; /* tamanho original da imagem colocada */
+    background-color: #ffffff; /* cor do plano de fundo da imagem */
+}
+
+ul#album-fotos li#foto05:hover { /* passar o mouse sobre a imagem reduzir a tela quando passar o mouse*/
+    background-position: 0px 0px; /* voltar a mostrar a parte de cima da tela */
+    background-size: 200px 200px; 
+}
+
+ul#album-fotos li#foto06 {
+    background: url('foto06.jpg') no-repeat;
+    background-position: 50% 50%; /* mudar o posicionamento da imagem */
+    background-size: 400px 400px; /* tamanho original da imagem colocada */
+    background-color: #ffffff; /* cor do plano de fundo da imagem */
+}
+
+ul#album-fotos li#foto06:hover { /* passar o mouse sobre a imagem reduzir a tela quando passar o mouse*/
+    background-position: 0px 0px; /* voltar a mostrar a parte de cima da tela */
+    background-size: 200px 200px; 
+}

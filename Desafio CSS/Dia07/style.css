@@ -1,0 +1,76 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=PT+Serif:ital@1&display=swap');
+
+@keyframes spin { 
+    80%{
+        border: 2px solid transparent;
+        border-left: 2px solid rosybrown;
+    }
+    100%{
+        transform: rotate(1080deg);
+        border: 2px solid rosybrown;
+    }
+}
+
+@keyframes check{
+    to{fill:rosybrown};
+}
+
+* {
+    margin: 0;
+    padding:0;
+}
+
+body {
+    width: 100vw;
+    height: 100vh;
+    background: #000;
+    display: flex;
+    align-items: center;
+    justify-content:center;
+    overflow: hidden;
+
+}
+
+button {
+    width: 180px;
+    height: 60px;
+    background:none;
+    border-radius: 50px;
+    border: 2px solid rosybrown;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: 500ms;
+}
+
+span, svg {
+    position: absolute;
+    color: #fff;
+    fill: transparent; /* cor da imagem svg */
+    font-size: 20px; /* tamanho da fonte */
+    font-family: 'PT Serif', serif;
+    letter-spacing: .2em; /* espacamento da letra */
+    font-weight: 300; /* peso da fonte */
+}
+
+button:focus{
+    outline: none;
+    border: 2px solid transparent;
+    width: 60px;
+    border-left: 2px solid rosybrown;
+    border-bottom: 2px solid rosybrown;
+    animation: spin 2s 500ms forwards;
+
+}
+
+button:focus span {
+    color: transparent;
+}
+
+button:focus svg {
+    animation: check 500ms 2300ms forwards;
+}
+
